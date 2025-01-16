@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <div
+        class="w-4/5 max-w-5xl min-h-80 bg-gradient-to-r from-indigo-200 to-teal-200 p-6 rounded-lg shadow-lg"
+      >
+        <div class="flex flex-row">
+          <div
+            class="bg-white h-auto w-1/2 p-4 rounded-l-lg flex flex-col items-start justify-start space-y-4"
+          >
+            <p class="text-blue-800 font-bold text-lg">General Information</p>
+
+            <select class="p-4 w-full" aria-label="Title">
+              <option value="" disabled selected>Title</option>
+              <option value="mr">Mr.</option>
+              <option value="mrs">Mrs.</option>
+              <option value="ms">Ms.</option>
+            </select>
+
+            <div class="flex space-x-4 w-full">
+              <input type="text" placeholder="First Name" class="p-2 w-full" />
+              <input type="text" placeholder="Last Name" class="p-2 w-full" />
+            </div>
+
+            <select class="p-4 w-full" aria-label="Position">
+              <option value="" disabled selected>Position</option>
+              <option value="manager">Manager</option>
+              <option value="developer">Developer</option>
+              <option value="designer">Designer</option>
+            </select>
+
+            <div class="flex space-x-4 w-full">
+              <input
+                type="text"
+                placeholder="Business Area"
+                class="p-4 w-full"
+              />
+
+              <select class="p-4 w-full" aria-label="Employees">
+                <option value="" disabled selected>Employees</option>
+                <option value="1-10">1-10</option>
+                <option value="11-50">11-50</option>
+                <option value="51+">51+</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- ContactDeatilsDiv -->
+          <div
+            class="bg-blue-900 h-auto w-1/2 p-4 rounded-r-lg shadow-lg flex flex-col items-start justify-start space-y-4"
+          >
+            <p class="text-white font-medium text-lg">Contact Details</p>
+
+            <form>
+              <input
+                type="text"
+                placeholder="Street + Nr"
+                class="p-2 w-full bg-blue-900 border-white 1px border-solid"
+              />
+
+              <input
+                type="text"
+                placeholder="Additional Information"
+                class="p-2 w-full bg-blue-900"
+              />
+
+              <div class="flex space-x-4 w-full">
+                <input
+                  type="number"
+                  placeholder="Zip Code"
+                  class="p-2 w-full bg-blue-900"
+                />
+                <input
+                  type="text"
+                  placeholder="Place"
+                  class="p-2 w-full bg-blue-900"
+                />
+              </div>
+
+              <input
+                type="text"
+                placeholder="Country"
+                class="p-2 w-full bg-blue-900"
+              />
+
+              <div class="flex space-x-4 w-full">
+                <input
+                  type="number"
+                  placeholder="Code +"
+                  class="p-2 w-full bg-blue-900"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  class="p-2 w-full bg-blue-900"
+                />
+              </div>
+
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="p-2 w-full bg-blue-900"
+              />
+
+              <div class="flex items-center space-x-2">
+                <input type="checkbox" id="terms" class="h-5 w-5" />
+                <label for="terms" class="text-sm"
+                  >I accept the <u>Terms and Conditions</u></label
+                >
+              </div>
+
+              <button type="submit" class="mt-4 p-2 bg-white text-black w-40">
+                REGISTER
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
