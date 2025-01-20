@@ -9,37 +9,41 @@
   </head>
   <body>
     <div class="flex flex-col items-center justify-center fixed inset-0 h-screen bg-gray-100">
-      <div class="w-4/5 max-w-3xl min-h-[700px] bg-gradient-to-r from-indigo-200 to-teal-200 p-6 rounded-lg shadow-lg fixed overflow-auto" >
-        <div class="flex flex-row m-[20px] sm:w-auto">
-          <div class="bg-white w-full md:w-1/2 p-4 rounded-l-lg flex flex-col items-start justify-start space-y-4" >
-            <p class="text-blue-800 font-bold text-lg m-5">  General Information
-            </p>
-            <select class="p-4 w-full border-b-2 bg-white border border-gray-500 focus:outline-none"
+      <!-- <div class="w-5/6 max-w-3xl min-h-[700px] bg-gradient-to-r from-indigo-200 to-teal-200 p-6 rounded-lg shadow-lg sm:static overflow-auto" > -->
+   <div class="w-6/6 max-w-9xl bg-gradient-to-r from-indigo-200 to-teal-200 p-6 rounded-lg shadow-lg ">
+
+        <div class="grid grid-flow-col md:flex md:flex-col ">
+          <div class="bg-white w-full md:w-1/2 p-4 rounded-l-lg grid grid-flow-col items-start justify-start space-y-4" >
+            <!-- <p class="text-blue-800 font-extrabold text-5xl  m-5" >  General Information -->
+              <h1 class="text-blue-800 font-bold text-lg m-5">General Information</h1>
+
+          
+            <select class="p-4 w-full color-black border-b-2 mt-4 bg-white border border-gray-500 focus:outline-none"
               aria-label="Title" >
               <option value="" disabled selected>Title</option>
               <option value="mr">Mr.</option>
               <option value="mrs">Mrs.</option>
               <option value="ms">Ms.</option>
             </select>
-             <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 w-full">
-              <input type="text" placeholder="First Name" class="p-2 w-full border border-gray-500 focus:outline-none"/>
-              <input type="text" placeholder="Last Name"class="p-2 w-full border border-gray-500 focus:outline-none" />
+             <div class="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-2 w-full">
+              <input type="text" placeholder="First Name"  class="p-4 w-full mt-4  text-black border border-gray-500 focus:outline-none"/>
+              <input type="text" placeholder="Last Name"class="p-4 w-full  mt-4 border border-gray-500 focus:outline-none" />
             </div>
 
-            <select class="p-4 w-full border border-gray-500 focus:outline-none bg-white" aria-label="Position">
+            <select class="p-4 w-full border border-gray-500 focus:outline-none bg-white mt-4" aria-label="Position">
               <option value="" disabled selected>Position</option>
               <option value="manager">Manager</option>
               <option value="developer">Developer</option>
               <option value="designer">Designer</option>
             </select>
             <div class="w-full">
-              <input type="text" placeholder="Position" class="p-2 w-full border border-gray-500 focus:outline-none"/>
+              <input type="text" placeholder="Position" class="p-4 mt-4 w-full border border-gray-500 focus:outline-none"/>
             </div>
 
-            <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 w-full">
-              <input type="text" placeholder="Business Area" class="p-4 w-full border border-gray-500 focus:outline-none"/>
+            <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-2 w-full">
+              <input type="text" placeholder="Business Area" class="p-4 mt-4 w-full border border-gray-500 focus:outline-none"/>
 
-              <select class="p-4 w-full border border-gray-500 focus:outline-none bg-white" aria-label="Employees">
+              <select class="p-4  w-full border border-gray-500 focus:outline-none  bg-white" aria-label="Employees">
                 <option value="" disabled selected>Employees</option>
                 <option value="1-10">1-10</option>
                 <option value="11-50">11-50</option>
@@ -49,34 +53,34 @@
           </div>
 
           <!-- ContactDeatilsDiv -->
-          <div class="bg-blue-900 w-full md:w-1/2 p-4 rounded-r-lg flex flex-col items-start justify-start space-y-4 relative">
-            <p class="text-white font-medium text-lg">Contact Details</p>
+          <div class="bg-blue-900 w-[100%] md:w-1/2 p-6 rounded-r-lg flex flex-col sm:grid space-y-4 relative ">
+            <p class="text-white font-bold text-lg m-4.5">Contact Details</p>
 
-            <form class="flex flex-col space-y-4">
-              <input type="text" placeholder="Street + Nr" class="p-2 w-full bg-blue-900 border border-white focus:outline-none m-2" />
-                <input type="text"placeholder="Additional Information"class="p-2 w-full bg-blue-900 border border-white focus:outline-none m-2"/>
+            <form class="grid grid-flow-col space-y-4  m-3 p-4">
+              <input type="text" placeholder="Street + Nr" class="p-4 w-full placeholder:font-bold mt-4 text-black placeholder-black bg-blue-900 border border-white focus:outline-none m-2 " />
+                <input type="text"placeholder="Additional Information"class="p-4 w-full  bg-blue-900 border border-white focus:outline-none m-2 placeholder:italic placeholder:text-slate-400/">
 
-              <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 w-full">
-                <input type="number" placeholder="Zip Code"class="p-2 w-full bg-blue-900 border border-white focus:outline-none m-2"/>
-                <input type="text" placeholder="Place" class="p-2 w-full bg-blue-900 border border-white focus:outline-none m-2" />
+              <div class="flex flex-col  md:flex-row md:space-x-4    pace-y-2 md:space-y-2 w-[100%]">
+                <input type="number" placeholder="Zip Code"class="p-4 w-full bg-blue-900 border border-white focus:outline-none m-2"/>
+                <input type="number" placeholder="Place" class="p-4 w-full bg-blue-900 border border-white focus:outline-none m-2" />
               </div>
 
               <input type="text" placeholder="Country"class="p-2 w-full bg-blue-900 border border-white focus:outline-none m-2" />
 
-              <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 w-full">
-                <input type="number" placeholder="Code +" class="p-2 w-full bg-blue-900 border border-white focus:outline-none m-2" />
+              <div class="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-02 w-full">
+                <input type="number" placeholder="Code +" class="p-4 w-full bg-blue-900 border border-white focus:outline-none m-2" />
 
-                <input type="text" placeholder="Phone Number" class="p-2 w-full bg-blue-900 border border-white focus:outline-none m-2"/>
+                <input type="text" placeholder="Phone Number"  class="p-4 w-full bg-blue-900 border border-white focus:outline-none m-2 ml-5"/>
               </div>
 
-              <input type="email" placeholder="Your Email" class="p-2 w-full bg-blue-900 border border-white focus:outline-none m-2"/>
+              <input type="email" placeholder="Your Email" class="p-4 w-full bg-blue-900 border border-white focus:outline-none m-2"/>
 
               <div class="flex items-center space-x-2">
                 <input type="checkbox" id="terms"class="h-5 w-5 border border-white focus:outline-none m-2" />
-                <label for="terms" class="text-sm text-white">I accept the <u>Terms and Conditions</u></label>
+                <label for="terms" class="text-sm text-white ">I accept the <u>Terms and Conditions</u></label>
               </div>
 
-              <button type="submit"class="mt-4 p-2 bg-white text-black w-40 border border-white focus:outline-none">
+              <button type="submit"class="mt-4 p-1 bg-white text-black font-bold rounded-lg w-35 border border-white focus:outline-none">
                 REGISTER
               </button>
             </form>
